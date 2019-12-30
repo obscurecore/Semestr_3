@@ -2,10 +2,10 @@
 <taglib>
 	<tlib-version>l.0</tlib-version>
 	<jsp-version>2.3</jsp-version>
-	<shortname>tags</shortname>
+	<short-name>tags</short-name>
 	<tag>
 		<name>urlEncode</name>
-		<tag-class>net.devstudy.ishop.tag.URLEncodeTag</tag-class>
+		<tag-class>ru.ruslan.shop.tag.URLEncodeTag</tag-class>
 		<body-content>empty</body-content>
 		<attribute>
 			<name>var</name>
