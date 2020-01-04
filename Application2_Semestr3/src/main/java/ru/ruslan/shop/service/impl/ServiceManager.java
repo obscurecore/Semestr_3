@@ -15,7 +15,7 @@ import java.util.Properties;
  * @author Potapov Ruslan
  * <p>
  * <p>
- * access to the b.service must exist as single instance,
+ * access to the b.service with settings must exist as single instance,
  * (all init here) and can get any instnaces in any controller
  * so that object store in attribute of ServletContext
  */

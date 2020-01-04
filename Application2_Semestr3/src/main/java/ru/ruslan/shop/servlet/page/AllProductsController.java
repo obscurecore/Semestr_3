@@ -1,6 +1,8 @@
 package ru.ruslan.shop.servlet.page;
 
 
+import ru.ruslan.shop.Constants;
+import ru.ruslan.shop.entity.Product;
 import ru.ruslan.shop.servlet.AbstractController;
 import ru.ruslan.shop.util.RoutingUtils;
 
@@ -29,6 +31,10 @@ public class  AllProductsController extends AbstractController {
 		List<?> products =getBusinessService().getProducts ();
 		req.setAttribute("products", products);
 		*/
+		List<Product> products = getProductService().listAllProducts(1, Constants.MAX_PRODUCTS_PER_HTML_PAGE);
+		req.setAttribute("products", products);
+		int totalCount = getProductService().countAllProducts();
+	//	req.setAttribute("pageCount", getPageCount(totalCount, Constants.MAX_PRODUCTS_PER_HTML_PAGE));
 		RoutingUtils.forwardToPage("products.jsp", req, resp);
 	}
 }
