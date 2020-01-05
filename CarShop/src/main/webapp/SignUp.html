@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fixed.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800'>
+    <link rel="stylesheet" href="css/styleR.css">
+    <!-- reCAPTCHA with English language -->
+    <script src='https://www.google.com/recaptcha/api.js?hl=en'></script>
+
+    <script src="../js/jquery.1.9.1.min.js"></script>
+    <script type="text/javascript">  $(document).ready(function () {
+        $('#buttonSum').click(function () {
+            alert("CLICK")
+            $.ajax({
+                type: 'POST',
+                dataType: 'json',
+                data: $('#updateUsername').serialize(),
+                url: '../ajaxx',
+                success: function (data) {
+                    if (data.isValid) {
+                        console.log(data.username);
+
+                    } else {
+                        alert('Please enter a valid username!')
+                    }
+                }
+            });
+        });
+    }); </script>
+
+    <script src='https://www.google.com/recaptcha/api.js?hl=en'></script>
+    <script>
+        window.onload = function () {
+            var $recaptcha = document.querySelector('#g-recaptcha-response');
+
+            if ($recaptcha) {
+                $recaptcha.setAttribute("required", "required");
+                alert('GOOD');
+
+            }
+            const $form = document.querySelector('form');
+            $form.addEventListener('buttonSum', event => {
+                event.preventDefault();
+                alert("sos");
+                console.log('prevented submit by code for demo');
+            });
+        };
+    </script>
+</head>
+<body>
+
+</div>
+<div class="signup-form">
+    <form id="updateUsername"
+          oninput='confirm_password.setCustomValidity(confirm_password.value != password.value ? "Passwords do not match." : "") '>
+
+        <h2>Sign Up</h2>
+        <hr>
+
+        <div class="form-group">
+            <input type="text" class="form-control" id="validationServer01" name="Fname" placeholder="First name"
+                   required>
+            <div class="valid-feedback">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="text" class="form-control" id="validationServer02" name="Lname" placeholder="Last name"
+                       required>
+                <div class="valid-feedback">
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" required="required" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="validationDefault03" placeholder="City" name="city"
+                           required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password" id="inputPassword"
+                           placeholder="Password" required="required">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="validationDefault05" name="confirm_password"
+                           placeholder="Confirm Password" required="required">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="validationDefault04" name="desc"
+                           placeholder="About yourself">
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="button" id="buttonSum" class="btn btn-primary  btn-block btn-lg">Sign Up</button>
+            </div>
+
+            <div class="wrapper">
+                <div class="g-recaptcha" data-sitekey="6Lc2Y8YUAAAAAC-BZRIQNg8Et9uN6uUWPS3Pt9b5"></div>
+                <button type="submit"> Submit</button>
+            </div>
+
+        </div>
+    </form>
+</div>
+<div class="footer-copyright text-center py-3">
+    <p class="text-center">By clicking the Sign Up button, you agree to my <br><a href="#">Terms &amp; Conditions</a>,
+        and <a href="#">Privacy Policy</a></p>
+
+</div>
+<!-- reCAPTCHA -->
+<div class="g-recaptcha"
+     data-sitekey="6LelZAsTAAAAAAv1ADYDnq8AzbmPmbMvjh-xhfgB"></div>
+</body>
+</html>
