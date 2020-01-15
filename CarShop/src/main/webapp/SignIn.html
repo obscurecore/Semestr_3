@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../BootStrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fixed.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800'>
+    <link rel="stylesheet" href="../css/Messanger/styleR.css">
+</head>
+<body>
+
+<div class="signup-form" >
+    <form action="/c1/servlet2" method="post"
+          oninput='confirm_password.setCustomValidity(confirm_password.value != password.value ? "Passwords do not match." : "")'>
+
+        <h2>Sign In</h2>
+        <hr>
+        <div class="form-group">
+            <input type="text" class="form-control" name="name"  placeholder="First name"  required>
+            <div class="valid-feedback">
+            </div>
+            <br>
+
+
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="Password"required="required">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block btn-lg">Sign Up</button>
+            </div>
+
+
+        </div>
+    </form>
+
+
+</div>
+<div class="footer-copyright text-center py-3">
+    <div class="text-center" style="vertical-align: bottom">Don't have an account? <a href="SignUp.html">Sign Up here</a></div>
+
+</div>
+<script src="../BootStrap/js/jquery-3.3.1.min.js"></script>
+<script src="../BootStrap/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>
+</body>
+</html>

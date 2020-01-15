@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <title>JSP Ajax Form</title>
+    <link rel="stylesheet" href="../css/basic.css" type="text/css" media="screen">
+    <script src="../js/jquery.1.9.1.min.js"></script>
+    <script type="text/javascript">  $(document).ready(function () {
+        $('#buttonSum').click(function () {
+
+            $.ajax({
+                type: 'POST',
+                dataType: 'json',
+                data: $('#updateUsername').serialize(),
+                url: '../ajaxx',
+                success: function (data) {
+                    if (data.isValid) {
+                        console.log(data.username);
+                        $('displayName').innerHTML('Your name is'+ data.username);
+                        $('displayName').slideDown(5000);
+                        document.getElementById("min").innerHTML = data.username;
+                    } else {
+                        alert('Please enter a valid username!')
+                    }
+                }
+            });
+        });
+    }); </script>
+</head>
+<body><h3>Multiple Parameters in Ajax</h3><form id = "updateUsername">
+<input type="text" id="username" name="username"/> <br> <input
+        type="button" value="Sum" id="buttonSum"> <br> Result: <span id="result"></span></form>
+<hr/>
+<hr>
+
+</body>
+</html>

@@ -1,0 +1,513 @@
+.box {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 39%;
+}
+.box2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.animation {
+    display: block;
+    width: 51px;
+    height: 51px;
+    background-repeat: no-repeat;
+    background-image: url(https://i.imgur.com/kHumN7t.png);
+    filter: invert(1);
+    background-size: 510px 612px;
+    animation: anim 5s steps(1) forwards;
+    animation-iteration-count: 3;
+}
+.image {
+    width: 300px;
+}
+@keyframes anim {
+    0% {
+        background-position:0 0
+    }
+
+    .33333% {
+        background-position:-51px 0
+    }
+
+    .66667% {
+        background-position:-102px 0
+    }
+
+    1% {
+        background-position:-153px 0
+    }
+
+    1.33333% {
+        background-position:-204px 0
+    }
+
+    1.66667% {
+        background-position:-255px 0
+    }
+
+    2% {
+        background-position:-306px 0
+    }
+
+    2.33333% {
+        background-position:-357px 0
+    }
+
+    2.66667% {
+        background-position:-408px 0
+    }
+
+    3% {
+        background-position:-459px 0
+    }
+
+    3.33333% {
+        background-position:0 -51px
+    }
+
+    3.66667% {
+        background-position:-51px -51px
+    }
+
+    4% {
+        background-position:-102px -51px
+    }
+
+    4.33333% {
+        background-position:-153px -51px
+    }
+
+    4.66667% {
+        background-position:-204px -51px
+    }
+
+    5% {
+        background-position:-255px -51px
+    }
+
+    5.33333% {
+        background-position:-306px -51px
+    }
+
+    5.66667% {
+        background-position:-357px -51px
+    }
+
+    6% {
+        background-position:-408px -51px
+    }
+
+    6.33333% {
+        background-position:-459px -51px
+    }
+
+    6.66667% {
+        background-position:0 -102px
+    }
+
+    7% {
+        background-position:-51px -102px
+    }
+
+    7.33333% {
+        background-position:-102px -102px
+    }
+
+    7.66667% {
+        background-position:-153px -102px
+    }
+
+    8% {
+        background-position:-204px -102px
+    }
+
+    8.33333% {
+        background-position:-255px -102px
+    }
+
+    8.66667% {
+        background-position:-306px -102px
+    }
+
+    9% {
+        background-position:-357px -102px
+    }
+
+    9.33333% {
+        background-position:-408px -102px
+    }
+
+    9.66667% {
+        background-position:-459px -102px
+    }
+
+    10% {
+        background-position:0 -153px
+    }
+
+    10.33333% {
+        background-position:-51px -153px
+    }
+
+    10.66667% {
+        background-position:-102px -153px
+    }
+
+    11% {
+        background-position:-153px -153px
+    }
+
+    11.33333% {
+        background-position:-204px -153px
+    }
+
+    11.66667% {
+        background-position:-255px -153px
+    }
+
+    12% {
+        background-position:-306px -153px
+    }
+
+    12.33333% {
+        background-position:-357px -153px
+    }
+
+    12.66667% {
+        background-position:-408px -153px
+    }
+
+    13% {
+        background-position:-459px -153px
+    }
+
+    13.33333% {
+        background-position:0 -204px
+    }
+
+    13.66667% {
+        background-position:-51px -204px
+    }
+
+    14% {
+        background-position:-102px -204px
+    }
+
+    14.33333% {
+        background-position:-153px -204px
+    }
+
+    14.66667% {
+        background-position:-204px -204px
+    }
+
+    15% {
+        background-position:-255px -204px
+    }
+
+    15.33333% {
+        background-position:-306px -204px
+    }
+
+    15.66667% {
+        background-position:-357px -204px
+    }
+
+    16% {
+        background-position:-408px -204px
+    }
+
+    16.33333% {
+        background-position:-459px -204px
+    }
+
+    16.66667% {
+        background-position:0 -255px
+    }
+
+    17% {
+        background-position:-51px -255px
+    }
+
+    17.33333% {
+        background-position:-102px -255px
+    }
+
+    17.66667% {
+        background-position:-153px -255px
+    }
+
+    18% {
+        background-position:-204px -255px
+    }
+
+    18.33333% {
+        background-position:-255px -255px
+    }
+
+    18.66667% {
+        background-position:-306px -255px
+    }
+
+    19% {
+        background-position:-357px -255px
+    }
+
+    19.33333% {
+        background-position:-408px -255px
+    }
+
+    19.66667% {
+        background-position:-459px -255px
+    }
+
+    20% {
+        background-position:0 -306px
+    }
+
+    20.33333% {
+        background-position:-51px -306px
+    }
+
+    20.66667% {
+        background-position:-102px -306px
+    }
+
+    21% {
+        background-position:-153px -306px
+    }
+
+    21.33333% {
+        background-position:-204px -306px
+    }
+
+    21.66667% {
+        background-position:-255px -306px
+    }
+
+    22% {
+        background-position:-306px -306px
+    }
+
+    22.33333% {
+        background-position:-357px -306px
+    }
+
+    22.66667% {
+        background-position:-408px -306px
+    }
+
+    23% {
+        background-position:-459px -306px
+    }
+
+    23.33333% {
+        background-position:0 -357px
+    }
+
+    23.66667% {
+        background-position:-51px -357px
+    }
+
+    24% {
+        background-position:-102px -357px
+    }
+
+    24.33333% {
+        background-position:-153px -357px
+    }
+
+    24.66667% {
+        background-position:-204px -357px
+    }
+
+    25% {
+        background-position:-255px -357px
+    }
+
+    25.33333% {
+        background-position:-306px -357px
+    }
+
+    25.66667% {
+        background-position:-357px -357px
+    }
+
+    26% {
+        background-position:-408px -357px
+    }
+
+    26.33333% {
+        background-position:-459px -357px
+    }
+
+    26.66667% {
+        background-position:0 -408px
+    }
+
+    27% {
+        background-position:-51px -408px
+    }
+
+    27.33333% {
+        background-position:-102px -408px
+    }
+
+    27.66667% {
+        background-position:-153px -408px
+    }
+
+    28% {
+        background-position:-204px -408px
+    }
+
+    28.33333% {
+        background-position:-255px -408px
+    }
+
+    28.66667% {
+        background-position:-306px -408px
+    }
+
+    29% {
+        background-position:-357px -408px
+    }
+
+    29.33333% {
+        background-position:-408px -408px
+    }
+
+    29.66667% {
+        background-position:-459px -408px
+    }
+
+    30% {
+        background-position:0 -459px
+    }
+
+    30.33333% {
+        background-position:-51px -459px
+    }
+
+    30.66667% {
+        background-position:-102px -459px
+    }
+
+    31% {
+        background-position:-153px -459px
+    }
+
+    31.33333% {
+        background-position:-204px -459px
+    }
+
+    31.66667% {
+        background-position:-255px -459px
+    }
+
+    32% {
+        background-position:-306px -459px
+    }
+
+    32.33333% {
+        background-position:-357px -459px
+    }
+
+    32.66667% {
+        background-position:-408px -459px
+    }
+
+    33% {
+        background-position:-459px -459px
+    }
+
+    33.33333% {
+        background-position:0 -510px
+    }
+
+    33.66667% {
+        background-position:-51px -510px
+    }
+
+    34% {
+        background-position:-102px -510px
+    }
+
+    34.33333% {
+        background-position:-153px -510px
+    }
+
+    34.66667% {
+        background-position:-204px -510px
+    }
+
+    35% {
+        background-position:-255px -510px
+    }
+
+    35.33333% {
+        background-position:-306px -510px
+    }
+
+    35.66667% {
+        background-position:-357px -510px
+    }
+
+    36% {
+        background-position:-408px -510px
+    }
+
+    36.33333% {
+        background-position:-459px -510px
+    }
+
+    36.66667% {
+        background-position:0 -561px
+    }
+
+    37% {
+        background-position:-51px -561px
+    }
+
+    37.33333% {
+        background-position:-102px -561px
+    }
+
+    37.66667% {
+        background-position:-153px -561px
+    }
+
+    38% {
+        background-position:-204px -561px
+    }
+
+    38.33333% {
+        background-position:-255px -561px
+    }
+
+    38.66667% {
+        background-position:-306px -561px
+    }
+
+    39% {
+        background-position:-357px -561px
+    }
+
+    39.33333% {
+        background-position:-408px -561px
+    }
+
+    39.66667% {
+        background-position:-459px -561px
+    }
+
+    40% {
+        background-position:-459px -561px
+    }
+
+    100% {
+        background-position:-459px -561px
+    }
+}
