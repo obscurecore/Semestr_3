@@ -1,4 +1,4 @@
-package ru.potapov;
+package ru.potapov.imposition_tasks;
 
 import java.net.URL;
 import java.util.regex.Matcher;
