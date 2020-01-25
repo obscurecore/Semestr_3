@@ -1,5 +1,6 @@
 import org.junit.After;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
@@ -32,5 +33,12 @@ public class UserTest {
     public void whenGrow2ThenAgeAdd2() {
         final int result = user.grow2();
         assertThat(result, is(31));
+    }
+
+    //only static
+    //call only one before get started (all tests) //
+    @BeforeClass
+    public static void  beforeOrAnyHandleName2(){
+
     }
 }
